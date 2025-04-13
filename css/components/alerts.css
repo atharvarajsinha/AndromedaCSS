@@ -1,4 +1,4 @@
-/* Cosmic Alert System */
+
 h2 {
   font-size: 2rem;
   color: rgb(66, 4, 4);
@@ -10,23 +10,25 @@ h2 {
 .alr {
     padding: 12px;
     border-radius: 8px;
-    margin-bottom: 12px;
-    display: flex;
-    align-items: flex-start;
-    gap: 8px ;
-    border-left: 4px solid transparent;
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.5;
+    margin-bottom:12px;
+    display:flex;
+    align-items:flex-start;
+    gap:8px ;
+    border-left:4px solid transparent;
+    font-family:'Segoe UI',sans-serif;
+    line-height:1.5;
   }
   
 
-  .alr-pri{
+  .alr-pri
+  {
     background-color: rgba(79, 70, 229, 0.1);
     color: #4932f1;
     border-left-color: #4932f1;
   }
   
-  .alr-sec {
+  .alr-sec 
+  {
     background-color: rgba(99, 102, 241, 0.1);
     color: #0690fa;
     border-left-color: #0690fa;
@@ -47,7 +49,7 @@ h2 {
   .alr-danger{
     background-color: rgba(239, 68, 68, 0.1);
     color:  #fd0e0e;
-    border-left-color:  #fd0e0e;
+    border-left-color: #fd0e0e;
   }
   
   /* Alert Elements */
@@ -69,15 +71,13 @@ h2 {
     color: inherit;
   }
   
-  /* Dark Mode Adjustments */
+  /* Dark Mode*/
   [data-theme="dark"] .alr{
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255,255,255, 0.05);
   }
-  
   [data-theme="dark"] .alr-pri{
-    background-color: rgba(79, 70, 229, 0.2);
+    background-color: rgba(79,70,229, 0.2);
   }
-  
-  [data-theme="dark"] .alr-sec{
-    background-color: rgba(99, 102, 241, 0.2);
+   [data-theme="dark"] .alr-sec{
+    background-color: rgba(99,102,241, 0.2);
   }
