@@ -1,1 +1,201 @@
 /* Effects */
+/* Shadows */
+.shadow-sm {
+    box-shadow: var(--cosmic-shadow-sm);
+}
+.shadow-md {
+    box-shadow: var(--cosmic-shadow-md);
+}
+.shadow-lg {
+    box-shadow: var(--cosmic-shadow-lg);
+}
+.shadow-xl {
+    box-shadow: var(--cosmic-shadow-xl);
+}
+.shadow-none {
+    box-shadow: none;
+}
+.shadow-primary {
+    box-shadow: var(--cosmic-glow-primary);
+}
+.shadow-accent {
+    box-shadow: var(--cosmic-glow-accent);
+}
+.shadow-danger {
+    box-shadow: 0 0 8px rgba(214, 48, 49, 0.6);
+}
+
+/* Glows */
+.glow-primary {
+    box-shadow: var(--cosmic-glow-primary);
+}
+.glow-accent {
+    box-shadow: var(--cosmic-glow-accent);
+}
+.glow-success {
+    box-shadow: 0 0 8px rgba(0, 184, 148, 0.6);
+}
+.glow-warning {
+    box-shadow: 0 0 8px rgba(253, 203, 110, 0.6);
+}
+.glow-danger {
+    box-shadow: 0 0 8px rgba(214, 48, 49, 0.6);
+}
+.glow-sm {
+    box-shadow: 0 0 4px currentColor;
+}
+.glow-md {
+    box-shadow: 0 0 8px currentColor;
+}
+.glow-lg {
+    box-shadow: 0 0 16px currentColor;
+}
+
+/* Opacity */
+.opacity-0 {
+    opacity: 0;
+}
+.opacity-10 {
+    opacity: 0.1;
+}
+.opacity-20 {
+    opacity: 0.2;
+}
+.opacity-30 {
+    opacity: 0.3;
+}
+.opacity-40 {
+    opacity: 0.4;
+}
+.opacity-50 {
+    opacity: 0.5;
+}
+.opacity-60 {
+    opacity: 0.6;
+}
+.opacity-70 {
+    opacity: 0.7;
+}
+.opacity-80 {
+    opacity: 0.8;
+}
+.opacity-90 {
+    opacity: 0.9;
+}
+.opacity-100 {
+    opacity: 1;
+}
+
+/* Background Blur */
+.blur-none {
+    filter: blur(0);
+}
+.blur-xs {
+    filter: blur(2px);
+}
+.blur-sm {
+    filter: blur(4px);
+}
+.blur-md {
+    filter: blur(8px);
+}
+.blur-lg {
+    filter: blur(16px);
+}
+.blur-xl {
+    filter: blur(24px);
+}
+
+/* Transitions */
+.transition-all {
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.transition-none {
+    transition: none;
+}
+.transition-colors {
+    transition-property: background-color, border-color, color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+.transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+.transition-transform {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+.transition-fast {
+    transition-duration: 100ms;
+}
+.transition-normal {
+    transition-duration: 300ms;
+}
+.transition-slow {
+    transition-duration: 500ms;
+}
+
+/* Transform */
+.scale-90 {
+    transform: scale(0.9);
+}
+.scale-95 {
+    transform: scale(0.95);
+}
+.scale-100 {
+    transform: scale(1);
+}
+.scale-105 {
+    transform: scale(1.05);
+}
+.scale-110 {
+    transform: scale(1.1);
+}
+
+.rotate-0 {
+    transform: rotate(0deg);
+}
+.rotate-45 {
+    transform: rotate(45deg);
+}
+.rotate-90 {
+    transform: rotate(90deg);
+}
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.translate-x-0 {
+    transform: translateX(0);
+}
+.translate-x-1 {
+    transform: translateX(4px);
+}
+.translate-x-2 {
+    transform: translateX(8px);
+}
+.translate-x-3 {
+    transform: translateX(16px);
+}
+.translate-x-4 {
+    transform: translateX(24px);
+}
+
+.translate-y-0 {
+    transform: translateY(0);
+}
+.translate-y-1 {
+    transform: translateY(4px);
+}
+.translate-y-2 {
+    transform: translateY(8px);
+}
+.translate-y-3 {
+    transform: translateY(16px);
+}
+.translate-y-4 {
+    transform: translateY(24px);
+}

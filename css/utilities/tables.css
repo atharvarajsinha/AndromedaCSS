@@ -1,1 +1,102 @@
 /* Tables */
+/* Layout */
+.table-auto { table-layout: auto !important; }
+.table-fixed { table-layout: fixed !important; }
+
+/* Table border */
+.table-border-collapse { border-collapse: collapse; }
+.table-border-separate { border-collapse: separate; }
+
+.table-border {
+  border: 1px solid var(--cosmic-gray-200);
+}
+.table-border-dark {
+  border: 1px solid var(--cosmic-gray-600);
+}
+.table-border-primary {
+  border: 1px solid var(--cosmic-primary);
+}
+
+.table-border-t {
+  border-top: 1px solid var(--cosmic-gray-200);
+}
+.table-border-r {
+  border-right: 1px solid var(--cosmic-gray-200);
+}
+.table-border-b {
+  border-bottom: 1px solid var(--cosmic-gray-200);
+}
+.table-border-l {
+  border-left: 1px solid var(--cosmic-gray-200);
+}
+
+/* Themed versions */
+[data-theme="dark"] .table-border,
+[data-theme="dark"] .table-border-t,
+[data-theme="dark"] .table-border-r,
+[data-theme="dark"] .table-border-b,
+[data-theme="dark"] .table-border-l {
+  border-color: var(--cosmic-gray-600);
+}
+
+/* Table Spacing */
+.table-spacing-xs {
+    border-spacing: var(--cosmic-space-xs);
+  }
+  .table-spacing-sm {
+    border-spacing: var(--cosmic-space-sm);
+  }
+  .table-spacing-md {
+    border-spacing: var(--cosmic-space-md);
+  }
+  .table-spacing-lg {
+    border-spacing: var(--cosmic-space-lg);
+  }
+
+/* Cell padding */
+.table-p-xs th,
+.table-p-xs td {
+  padding: var(--cosmic-space-xs);
+}
+.table-p-sm th,
+.table-p-sm td {
+  padding: var(--cosmic-space-sm);
+}
+.table-p-md th,
+.table-p-md td {
+  padding: var(--cosmic-space-md);
+}
+.table-p-lg th,
+.table-p-lg td {
+  padding: var(--cosmic-space-lg);
+}
+.table-p-xl th,
+.table-p-xl td {
+  padding: var(--cosmic-space-xl);
+}
+
+/* hower effects */
+.table-hover tbody tr:hover {
+    background-color: var(--cosmic-gray-200);
+  }
+  .table-hover-dark tbody tr:hover {
+    background-color: var(--cosmic-gray-700);
+  }
+  .table-hover-primary tbody tr:hover {
+    background-color: rgba(108, 92, 231, 0.2);
+  }
+  .table-hover-accent tbody tr:hover {
+    background-color: rgba(0, 206, 201, 0.2);
+  }
+  
+  [data-theme="dark"] .table-hover tbody tr:hover {
+    background-color: var(--cosmic-gray-700);
+  }
+
+/* table captions */
+.table-caption-top {
+    caption-side: top;
+  }
+  .table-caption-bottom {
+    caption-side: bottom;
+  }

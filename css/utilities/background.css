@@ -1,1 +1,139 @@
 /* Backgrounds */
+
+/* attachment */
+.bg-fixed{
+    background-attachment: fixed;
+}
+.bg-local{
+    background-attachment: local;
+}
+.bg-scroll{
+    background-attachment: scroll;
+}
+
+/* clip */
+.bg-clip-border{
+    background-clip: border-box;
+}
+.bg-clip-padding{
+    background-clip: padding-box;
+}
+.bg-clip-content{
+    background-clip: content-box;
+}
+.bg-clip-text{
+    background-clip: text;
+}
+
+/* colors */
+.bg-transparent{
+    background-color: transparent;
+}
+.bg-black {
+    background-color: black;
+}
+.bg-white {
+    background-color: white;
+}
+.bg-red {
+    background-color: red;
+}
+.bg-blue {
+    background-color: blue;
+}
+.bg-green {
+    background-color: green;
+}
+.bg-yellow {
+    background-color: yellow;
+}
+.bg-orange {
+    background-color: orange;
+}
+.bg-purple {
+    background-color: purple;
+}
+.bg-pink {
+    background-color: pink;
+}
+.bg-gray {
+    background-color: gray;
+}
+.bg-brown {
+    background-color: brown;
+}
+
+/* opacity */
+.bg-opacity-0 {
+    opacity: 0;
+}
+.bg-opacity-10 {
+    opacity: 0.1;
+}
+.bg-opacity-20 {
+    opacity: 0.2;
+}
+.bg-opacity-30 {
+    opacity: 0.3;
+}
+.bg-opacity-40 {
+    opacity: 0.4;
+}
+.bg-opacity-50 {
+    opacity: 0.5;
+}
+.bg-opacity-60 {
+    opacity: 0.6;
+}
+.bg-opacity-70 {
+    opacity: 0.7;
+}
+.bg-opacity-80 {
+    opacity: 0.8;
+}
+.bg-opacity-90 {
+    opacity: 0.9;
+}
+.bg-opacity-100 {
+    opacity: 1;
+}
+
+/* position */
+.bg-bottom {
+    background-position: bottom;
+}
+.bg-center {
+    background-position: center;
+}
+.bg-left {
+    background-position: left;
+}
+.bg-left-bottom {
+    background-position: left bottom;
+}
+.bg-left-top {
+    background-position: left top;
+}
+.bg-right {
+    background-position: right;
+}
+.bg-right-bottom {
+    background-position: right bottom;
+}
+.bg-right-top {
+    background-position: right top;
+}
+.bg-top {
+    background-position: top;
+}
+
+/* size */
+.bg-auto {
+    background-size: auto;
+}
+.bg-cover {
+    background-size: cover;
+}
+.bg-contain {
+    background-size: contain;
+}

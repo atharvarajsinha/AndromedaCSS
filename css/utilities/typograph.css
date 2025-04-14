@@ -1,1 +1,85 @@
 /* Typography */
+
+/* Font family */
+.font-sans{
+    font-family: 'sans-serif'; 
+}
+.font-serif{
+    font-family: 'serif'; 
+}
+.font-mono{
+    font-family: 'monospace'; 
+}
+
+/* Text Decor */
+.underline{
+    text-decoration: underline; 
+}
+.line-through{
+    text-decoration: line-through; 
+}
+.no-underline{
+    text-decoration: none; 
+}
+
+/* Text overflow */
+.truncate{
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap; 
+}
+.overflow-ellipsis{
+    text-overflow: ellipsis; 
+}
+.overflow-clip{
+    text-overflow: clip; 
+}
+
+/* vertical alignment */
+.align-baseline{
+    vertical-align: baseline; 
+}
+.align-top{
+    vertical-align: top; 
+}
+.align-middle{
+    vertical-align: middle; 
+}
+.align-bottom{
+    vertical-align: bottom; 
+}
+.align-text-top{
+    vertical-align: text-top; 
+}
+.align-text-bottom{
+    vertical-align: text-bottom; 
+}
+
+/* whitespace */
+.whitespace-normal{
+    white-space: normal; 
+}
+.whitespace-nowrap{
+    white-space: nowrap; 
+}
+.whitespace-pre{
+    white-space: pre; 
+}
+.whitespace-pre-line{
+    white-space: pre-line; 
+}
+.whitespace-pre-wrap{
+    white-space: pre-wrap; 
+}
+
+/* word break */
+.break-normal{
+    word-break: normal; overflow-wrap: normal; 
+}
+.break-words{
+    overflow-wrap: break-word; 
+}
+.break-all{
+    word-break: break-all; 
+}
+.break-keep{
+    word-break: keep-all; 
+}
