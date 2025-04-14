@@ -1,1 +1,100 @@
-/* Spinners */
+/* Cosmic Loading Spinners - Themed */
+.spinner {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: cosmic-spin 0.75s linear infinite;
+  }
+  
+  .spinner-primary {
+    color: var(--primary);
+  }
+  
+  .spinner-secondary {
+    color: var(--secondary);
+  }
+  
+  .spinner-success {
+    color: var(--success);
+  }
+  
+  .spinner-info {
+    color: var(--info);
+  }
+  
+  .spinner-warn {
+    color: var(--warn);
+  }
+  
+  .spinner-danger {
+    color: var(--danger);
+  }
+  
+  .spinner-light {
+    color: var(--light);
+  }
+  
+  .spinner-dark {
+    color: var(--dark);
+  }
+  
+  .spinner-sm {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.15em;
+  }
+  
+  .spinner-lg {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.35em;
+  }
+  
+  /* Button Spinner */
+  .btn .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Keyframes */
+  @keyframes cosmic-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Pulse Animation */
+  .spinner-pulse {
+    width: 2rem;
+    height: 2rem;
+    background-color: currentColor;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: cosmic-pulse 1.5s infinite ease-in-out;
+  }
+  
+  @keyframes cosmic-pulse {
+    0%, 100% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  }
+  
+  /* Dark Mode Adjustments */
+  [dark-mode="dark"] .spinner-dark {
+    color: var(--light);
+  }
+  
+  [dark-mode="dark"] .spinner-light {
+    color: var(--dark);
+  }
+  

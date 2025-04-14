@@ -1,1 +1,81 @@
-/* Cards */
+/* Cosmic Card System */
+.card {
+    background-color: var(--white);
+    border-radius: var(--rd-lg);
+    box-shadow: var(--shd-md);
+    overflow: hidden;
+    transition: var(--trs);
+    border: 1px solid var(--g-200);
+  }
+  
+  .card-hoverable:hover {
+    box-shadow: var(--shd-lg);
+    transform: translateY(-2px);
+  }
+  
+  /* Card Sections */
+  .card-header {
+    padding: var(--sp-md) var(--sp-md) 0;
+    font-size: var(--txt-xl);
+    font-weight: 600;
+    color: var(--dark);
+  }
+
+    .card-body {
+        padding: var(--sp-md);
+        color: var(--g-500);
+      }
+  
+      .card-footer {
+        padding: var(--sp-md);
+        border-top: 1px solid var(--g-200);
+        background-color: var(--g-100);
+      }
+  
+      /* Variants */
+      .card-primary {
+        border-top: 4px solid var(--primary);
+      }
+  
+      .card-secondary {
+        border-top: 4px solid var(--secondary);
+      }
+  
+  .card-accent {
+      border-top: 4px solid var(--success);
+    }
+
+    .card-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-img-top {
+      border-top-left-radius: var(--rd-lg);
+      border-top-right-radius: var(--rd-lg);
+    }
+
+    .card-img-bottom {
+      border-bottom-left-radius: var(--rd-lg);
+      border-bottom-right-radius: var(--rd-lg);
+    }
+
+   /* Dark mode adjustments */
+    [dark-mode="dark"] .card {
+      background-color: var(--g-800);
+      border-color: var(--g-700);
+    }
+
+    [dark-mode="dark"] .card-header {
+      color: var(--light);
+    }
+
+    [dark-mode="dark"] .card-body {
+      color: var(--g-300);
+    }
+
+    [dark-mode="dark"] .card-footer {
+      background-color: var(--g-700);
+      border-color: var(--g-600);
+    }

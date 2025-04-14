@@ -1,1 +1,69 @@
-/* Footer */
+/* Cosmic Footer */
+.footer {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: var(--sp-xl) 0;
+    font-family: var(--font-sans);
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--sp-lg);
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--sp-xl);
+  }
+  
+  .footer-title {
+    color: var(--white);
+    font-size: var(--txt-xl);
+    margin-bottom: var(--sp-xl);
+    font-weight: 600;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-link {
+    margin-bottom: var(--sp-sm);
+  }
+  
+  .footer-link a {
+    color: var(--g-300);
+    text-decoration: none;
+    transition: var(--trs-fs);
+  }
+  
+  .footer-link a:hover {
+    color: var(--info);
+  }
+  
+  .footer-bottom {
+    margin-top: var(--sp-xl);
+    padding-top: var(--sp-md);
+    border-top: 1px solid var(--g-700);
+    text-align: center;
+    color: var(--g-400);
+    font-size: var(--txt-sm);
+  }
+  
+  /* Dark Mode Adjustments */
+  [data-theme="dark"] .footer {
+    background-color: var(--g-900);
+  }
+  
+  [data-theme="dark"] .footer-link a {
+    color: var(--g-400);
+  }
+  
+  [data-theme="dark"] .footer-link a:hover {
+    color: var(--info);
+  }
+  

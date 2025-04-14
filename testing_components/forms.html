@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Form</title>
+  <link rel="stylesheet" href="forms.css"> <!-- Link your CSS file here -->
+  <style>
+    /* Variables */
+:root {
+    --primary: #6c5ce7;
+    --secondary: #0984e3;
+    --success: #00b894;
+    --info: #0984e3;
+    --warn: #fdcb6e;
+    --danger: #d63031;
+    --light: #dfe6e9;
+    --white: #ffffff;
+    --dark: #2d3436;
+    --black: #2d3436;
+
+    /* Grayscale */
+    --g-100: #f5f6fa;
+    --g-200: #dcdde1;
+    --g-300: #7f8fa6;
+    --g-400: #718093;
+    --g-500: #636e72;
+    --g-600: #353b48;
+    --g-700: #2f3640;
+    --g-800: #1e272e;
+    --g-900: #0c0e10;
+
+    /* Spacing */
+    --sp-xs: 4px;
+    --sp-sm: 8px;
+    --sp-md: 16px;
+    --sp-lg: 24px;
+    --sp-xl: 32px;
+    --sp-xxl: 48px;
+    --sp-xxxl: 64px;
+
+    /* Typography */
+    --font-serif: Georgia, 'Times New Roman', Times, serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'Space Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --txt-xs: 12px;
+    --txt-sm: 14px;
+    --txt-md: 16px;
+    --txt-lg: 18px;
+    --txt-xl: 20px;
+    --txt-xxl: 22px;
+    --txt-xxxl: 24px;
+
+    /* Shadows */
+    --shd-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --shd-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shd-lg: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    --shd-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --gl-pr: 0 0
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--g-100);
+      color: var(--dark);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      transition: background-color var(--trs), color var(--trs);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 500px;
+      padding: var(--sp-lg);
+      background-color: var(--white);
+      border-radius: var(--rd-lg);
+      box-shadow: var(--shd-md);
+      transition: background-color var(--trs), box-shadow var(--trs);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: var(--txt-xl);
+      margin-bottom: var(--sp-lg);
+      color: var(--primary);
+    }
+ 8px rgba(108, 92, 231, 0.6);
+    --gl-sd: 0 0 8px rgba(0, 206, 201, 0.6);
+
+    /* Border radius */
+    --rd-sm: 2px;
+    --rd-md: 4px;
+    --rd-lg: 8px;
+    --rd-xl: 16px;
+
+    /* Transitions */
+    --trs: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --trs-sl: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --trs-fs: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    /* Breakpoints for Media View */
+    --brkpt-xs: 0;
+    --brkpt-sm: 576px;
+    --brkpt-md: 768px;
+    --brkpt-lg: 992px;
+    --brkpt-xl: 1200px;
+}
+
+[dark-mode="dark"] {
+    --primary: #a29bfe;
+    --secondary: #74b9ff;
+    --success: #00b894;
+    --info: #74b9ff;
+    --warn: #fdcb6e;
+    --danger: #d63031;
+    --light: #2d3436;
+    --dark: #dfe6e9;
+
+    /* Dark Mode GrayScales */
+    --g-100: #0c0e10;
+    --g-200: #1e272e;
+    --g-300: #2f3640;
+    --g-400: #353b48;
+    --g-500: #636e72;
+    --g-600: #718093;
+    --g-700: #7f8fa6;
+    --g-800: #dcdde1;
+    --g-900: #f5f6fa;
+
+    /* Dark Mode Shadows */
+    --shd-sm: 0 1px 3px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(255, 255, 255, 0.08);
+    --shd-md: 0 4px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(255, 255, 255, 0.08);
+    --shd-lg: 0 10px 20px rgba(255, 255, 255, 0.1), 0 6px 6px rgba(255, 255, 255, 0.1);
+    --shd-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --gl-pr: 0 0 12px rgba(162, 155, 254, 0.4);
+    --gl-sd: 0 0 12px rgba(85, 239, 196, 0.4);
+}
+  </style>
+</head>
+<body>
+
+  <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+
+  <div class="container">
+    <h1>Form</h1>
+    <form>
+      <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" id="email" class="form-control is-valid" placeholder="name@example.com">
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+
+      <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" id="password" class="form-control is-invalid" placeholder="Enter your password">
+        <div class="invalid-feedback">Password is required</div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="terms">
+          <label class="form-label" for="terms">I agree to the terms and conditions</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Gender</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="male">
+          <label class="form-label" for="male">Male</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="female">
+          <label class="form-label" for="female">Female</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="smallInput" class="form-label">Small Input</label>
+        <input type="text" id="smallInput" class="form-control form-control-sm" placeholder="Small size">
+      </div>
+
+      <div class="form-group">
+        <label for="largeInput" class="form-label">Large Input</label>
+        <input type="text" id="largeInput" class="form-control form-control-lg" placeholder="Large size">
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      const theme = document.documentElement.getAttribute("data-theme");
+      document.documentElement.setAttribute("data-theme", theme === "dark" ? "light" : "dark");
+    }
+  </script>
+
+</body>
+</html>

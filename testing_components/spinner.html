@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cosmic Spinners Demo</title>
+  <link rel="stylesheet" href="spinner.css"> <!-- Link your CSS here -->
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn {
+      position: relative;
+      padding: 0.75rem 1.5rem;
+      background-color: var( --primary, #6c5ce7);
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="spinner spinner-primary"></div>
+  <div class="spinner spinner-secondary"></div>
+  <div class="spinner spinner-accent"></div>
+  <div class="spinner spinner-light" style="background: black;"></div>
+  <div class="spinner spinner-dark"></div>
+
+  
+  <div class="spinner spinner-primary spinner-sm"></div>
+  <div class="spinner spinner-primary spinner-lg"></div>
+
+  
+  <div class="spinner-pulse spinner-accent"></div>
+
+  
+  <button class="btn" disabled>
+    <span class="spinner spinner-light spinner-sm"></span>
+    Loading...
+  </button>
+
+</body>
+</html>
