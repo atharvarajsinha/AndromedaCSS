@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cosmic Button System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="buttons.css" />
+  <style>
+    /* Variables */
+:root {
+    --primary: #6c5ce7;
+    --secondary: #0984e3;
+    --success: #00b894;
+    --info: #0984e3;
+    --warn: #fdcb6e;
+    --danger: #d63031;
+    --light: #dfe6e9;
+    --white: #ffffff;
+    --dark: #2d3436;
+    --black: #2d3436;
+
+    /* Grayscale */
+    --g-100: #f5f6fa;
+    --g-200: #dcdde1;
+    --g-300: #7f8fa6;
+    --g-400: #718093;
+    --g-500: #636e72;
+    --g-600: #353b48;
+    --g-700: #2f3640;
+    --g-800: #1e272e;
+    --g-900: #0c0e10;
+
+    /* Spacing */
+    --sp-xs: 4px;
+    --sp-sm: 8px;
+    --sp-md: 16px;
+    --sp-lg: 24px;
+    --sp-xl: 32px;
+    --sp-xxl: 48px;
+    --sp-xxxl: 64px;
+
+    /* Typography */
+    --font-serif: Georgia, 'Times New Roman', Times, serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'Space Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --txt-xs: 12px;
+    --txt-sm: 14px;
+    --txt-md: 16px;
+    --txt-lg: 18px;
+    --txt-xl: 20px;
+    --txt-xxl: 22px;
+    --txt-xxxl: 24px;
+
+    /* Shadows */
+    --shd-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --shd-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shd-lg: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    --shd-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --gl-pr: 0 0 8px rgba(108, 92, 231, 0.6);
+    --gl-sd: 0 0 8px rgba(0, 206, 201, 0.6);
+
+    /* Border radius */
+    --rd-sm: 2px;
+    --rd-md: 4px;
+    --rd-lg: 8px;
+    --rd-xl: 16px;
+
+    /* Transitions */
+    --trs: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --trs-sl: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --trs-fs: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    /* Breakpoints for Media View */
+    --brkpt-xs: 0;
+    --brkpt-sm: 576px;
+    --brkpt-md: 768px;
+    --brkpt-lg: 992px;
+    --brkpt-xl: 1200px;
+}
+
+[dark-mode="dark"] {
+    --primary: #a29bfe;
+    --secondary: #74b9ff;
+    --success: #00b894;
+    --info: #74b9ff;
+    --warn: #fdcb6e;
+    --danger: #d63031;
+    --light: #2d3436;
+    --dark: #dfe6e9;
+
+    /* Dark Mode GrayScales */
+    --g-100: #0c0e10;
+    --g-200: #1e272e;
+    --g-300: #2f3640;
+    --g-400: #353b48;
+    --g-500: #636e72;
+    --g-600: #718093;
+    --g-700: #7f8fa6;
+    --g-800: #dcdde1;
+    --g-900: #f5f6fa;
+
+    /* Dark Mode Shadows */
+    --shd-sm: 0 1px 3px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(255, 255, 255, 0.08);
+    --shd-md: 0 4px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(255, 255, 255, 0.08);
+    --shd-lg: 0 10px 20px rgba(255, 255, 255, 0.1), 0 6px 6px rgba(255, 255, 255, 0.1);
+    --shd-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --gl-pr: 0 0 12px rgba(162, 155, 254, 0.4);
+    --gl-sd: 0 0 12px rgba(85, 239, 196, 0.4);
+}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1 class="cosmic-title">🚀 Cosmic Button System</h1>
+
+
+    <section>
+      <h2>Variants</h2>
+      <div class="btn-group">
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-accent">Accent</button>
+        <button class="btn btn-outline">Outline</button>
+        <button class="btn btn-ghost">Ghost</button>
+        <button class="btn btn-link">Link</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sizes</h2>
+      <div class="btn-group">
+        <button class="btn btn-sm btn-primary">Small</button>
+        <button class="btn btn-primary">Medium</button>
+        <button class="btn btn-lg btn-primary">Large</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Icon Button</h2>
+      <button class="btn btn-icon btn-primary">
+        <span>★</span>
+      </button>
+    </section>
+
+    <section>
+      <h2>Group</h2>
+      <div class="btn-group">
+        <button class="btn btn-secondary">Left</button>
+        <button class="btn btn-secondary">Center</button>
+        <button class="btn btn-secondary">Right</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
