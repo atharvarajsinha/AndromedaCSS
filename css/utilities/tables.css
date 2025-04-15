@@ -1,1 +1,103 @@
 /* Tables */
+/* Tables */
+/* Layout */
+.table-auto { table-layout: auto !important; }
+.table-fixed { table-layout: fixed !important; }
+
+/* Table border */
+.table-border-collapse { border-collapse: collapse; }
+.table-border-separate { border-collapse: separate; }
+
+.table-border {
+  border: 1px solid var(--g-200);
+}
+.table-border-dark {
+  border: 1px solid var(--g-600);
+}
+.table-border-primary {
+  border: 1px solid var(--primary);
+}
+
+.table-border-t {
+  border-top: 1px solid var(--g-200);
+}
+.table-border-r {
+  border-right: 1px solid var(--g-200);
+}
+.table-border-b {
+  border-bottom: 1px solid var(--g-200);
+}
+.table-border-l {
+  border-left: 1px solid var(--g-200);
+}
+
+/* Themed versions */
+[data-theme="dark"] .table-border,
+[data-theme="dark"] .table-border-t,
+[data-theme="dark"] .table-border-r,
+[data-theme="dark"] .table-border-b,
+[data-theme="dark"] .table-border-l {
+  border-color: var(--g-600);
+}
+
+/* Table Spacing */
+.table-spacing-xs {
+  border-spacing: var(--sp-xs);
+}
+.table-spacing-sm {
+  border-spacing: var(--sp-sm);
+}
+.table-spacing-md {
+  border-spacing: var(--sp-md);
+}
+.table-spacing-lg {
+  border-spacing: var(--sp-lg);
+}
+
+/* Cell padding */
+.table-p-xs th,
+.table-p-xs td {
+  padding: var(--sp-xs);
+}
+.table-p-sm th,
+.table-p-sm td {
+  padding: var(--sp-sm);
+}
+.table-p-md th,
+.table-p-md td {
+  padding: var(--sp-md);
+}
+.table-p-lg th,
+.table-p-lg td {
+  padding: var(--sp-lg);
+}
+.table-p-xl th,
+.table-p-xl td {
+  padding: var(--sp-xl);
+}
+
+/* Hover effects */
+.table-hover tbody tr:hover {
+  background-color: var(--g-200);
+}
+.table-hover-dark tbody tr:hover {
+  background-color: var(--g-700);
+}
+.table-hover-primary tbody tr:hover {
+  background-color: rgba(108, 92, 231, 0.2); /* Based on --primary */
+}
+.table-hover-accent tbody tr:hover {
+  background-color: rgba(0, 206, 201, 0.2); /* Based on --secondary / --info / --gl-sd */
+}
+
+[data-theme="dark"] .table-hover tbody tr:hover {
+  background-color: var(--g-700);
+}
+
+/* Table captions */
+.table-caption-top {
+  caption-side: top;
+}
+.table-caption-bottom {
+  caption-side: bottom;
+}
