@@ -1,0 +1,23 @@
+/* Normal CSS */
+@import url("/css/base.css");
+@import url("/css/variables.css");
+@import url("/css/reset.css");
+@import url("/css/grid.css");
+/* Components CSS */
+@import url("/css/components/alerts.css");
+@import url("/css/components/buttons.css");
+@import url("/css/components/darkmode.css");
+@import url("/css/components/cards.css");
+@import url("/css/components/footer.css");
+@import url("/css/components/navbar.css");
+@import url("/css/components/spinner.css");
+@import url("/css/components/forms.css");
+/* Utilities CSS */
+@import url("/css/utilities/spacing.css");
+@import url("/css/utilities/background.css");
+@import url("/css/utilities/border.css");
+@import url("/css/utilities/effects.css");
+@import url("/css/utilities/flex.css");
+@import url("/css/utilities/tables.css");
+@import url("/css/utilities/text.css");
+@import url("/css/utilities/typograph.css");
