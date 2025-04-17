@@ -1,3 +1,14 @@
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: var(--sp-lg);
+    background-color: var(--white);
+    border-radius: var(--rd-lg);
+    box-shadow: var(--shd-md);
+    transition: background-color var(--trs), box-shadow var(--trs);
+    margin-top: var(--sp-xxl);
+}
+
 .form-group {
     margin-bottom: var(--sp-md);
 }
@@ -42,9 +53,6 @@
     opacity: 0.8;
 }
 
-/* ===========================
-   Form Validation
-=========================== */
 .form-control.is-invalid {
     border-color: var(--dark);
     background-color: rgba(var(--danger-rgb), 0.05);
@@ -67,9 +75,6 @@
     margin-top: var(--sp-xs);
 }
 
-/* ===========================
-   Checkboxes and Radios
-=========================== */
 .form-check {
     display: flex;
     align-items: center;
@@ -90,9 +95,6 @@
     border-color: var(--primary);
 }
 
-/*
-   Form Sizes
-*/
 .form-control-sm {
     padding: var(--sp-xs) var(--sp-sm);
     font-size: var(--txt-sm);
@@ -102,93 +104,3 @@
     padding: var(--sp-md) var(--sp-lg);
     font-size: var(--txt-lg);
 }
-
-/* ===========================
-   Dark Mode Adjustments
-=========================== */
-[data-theme="dark"] .form-label {
-    color: var(--light);
-}
-
-[data-theme="dark"] .form-control {
-    background-color: var(--g-800);
-    border-color: var(--g-600);
-    color: var(--light);
-}
-
-[data-theme="dark"] .form-control:focus {
-    box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.2);
-}
-
-[data-theme="dark"] .form-control:hover {
-    border-color: var(--primary-light);
-}
-
-/* ===========================
-   Dark Mode Toggle
-=========================== */
-.dark-mode-toggle {
-    margin-bottom: 20px;
-    position: absolute;
-    top: var(--sp-md);
-    right: var(--sp-md);
-    background-color: var(--primary);
-    color: var(--white);
-    border: none;
-    border-radius: var(--rd-md); /* Reduced border radius */
-    padding: var(--sp-xs) var(--sp-sm); /* Reduced padding */
-    font-size: var(--txt-sm); /* Reduced font size */
-    cursor: pointer;
-    transition: background-color var(--trs);
-    z-index: 15; /* Ensure it stays above other elements */
-}
-
-.dark-mode-toggle:hover {
-    background-color: var(--secondary);
-}
-/* ===========================
-   Container Adjustments
-=========================== */
-.container {
-    margin-top: var(--sp-xxl); /* Add margin to push the form down */
-}
-
-[data-theme="dark"] body {
-    background-color: var(--g-900);
-    color: var(--light);
-  }
-
-  [data-theme="dark"] .container {
-    background-color: var(--g-800);
-    box-shadow: var(--shd-lg);
-  }
-
-  body {
-    font-family: var(--font-sans);
-    background-color: var(--g-100);
-    color: var(--dark);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    transition: background-color var(--trs), color var(--trs);
-  }
-
-  .container {
-    width: 100%;
-    max-width: 500px;
-    padding: var(--sp-lg);
-    background-color: var(--white);
-    border-radius: var(--rd-lg);
-    box-shadow: var(--shd-md);
-    transition: background-color var(--trs), box-shadow var(--trs);
-  }
-
-  h1 {
-    text-align: center;
-    font-size: var(--txt-xl);
-    margin-bottom: var(--sp-lg);
-    color: var(--primarymary);
-  }
