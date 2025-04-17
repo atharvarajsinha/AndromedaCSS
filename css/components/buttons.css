@@ -1,22 +1,10 @@
-:root {
-    font-family: var(--font-sans);
-  }
-  
-  .cosmic-title {
+/* .btn-title {
     font-size: var(--txt-xxxl);
     font-weight: 800;
     background: linear-gradient(90deg, var(--primary), var(--danger));
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: var(--sp-xl);
-  }
-  
-  body {
-    background-color: var(--g-100);
-    color: var(--g-900);
-    margin: 0;
-    padding: var(--sp-xxl);
   }
   
   .container {
@@ -50,7 +38,7 @@
   }
   
   /* Buttons */
-  .btn {
+.btn {
     border: none;
     border-radius: var(--rd-lg);
     padding: var(--sp-sm) var(--sp-lg);
@@ -65,75 +53,75 @@
     align-items: center;
     justify-content: center;
     gap: var(--sp-xs);
-  }
-  
-  .btn-primary {
+}
+
+.btn-primary {
     background: var(--primary);
     animation: glow 2.5s ease-in-out infinite alternate;
-  }
-  
-  .btn-secondary {
+}
+
+.btn-secondary {
     background: var(--secondary);
-  }
-  
-  .btn-accent {
+}
+
+.btn-accent {
     background: var(--warn);
     color: var(--black);
-  }
-  
-  .btn-outline {
+}
+
+.btn-outline {
     border: 2px solid var(--g-900);
     background: transparent;
     color: var(--g-900);
-  }
-  
-  .btn-ghost {
+}
+
+.btn-ghost {
     background: var(--light);
     color: var(--dark);
-  }
-  
-  .btn-link {
+}
+
+.btn-link {
     background: none;
     color: var(--info);
     text-decoration: underline;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     transform: scale(1.05);
     box-shadow: var(--shd-md);
-  }
-  
-  .btn-sm {
+}
+
+.btn-sm {
     font-size: var(--txt-sm);
     padding: var(--sp-xs) var(--sp-sm);
-  }
-  
-  .btn-lg {
+}
+
+.btn-lg {
     font-size: var(--txt-lg);
     padding: var(--sp-md) var(--sp-xl);
-  }
-  
-  .btn-icon {
+}
+
+.btn-icon {
     border-radius: 50%;
     padding: var(--sp-sm);
     width: 48px;
     height: 48px;
     font-size: var(--txt-xl);
     justify-content: center;
-  }
-  
-  .btn-group {
+}
+
+.btn-group {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  /* Glow animation */
-  @keyframes glow {
+}
+
+/* Glow animation */
+@keyframes glow {
     from {
-      box-shadow: var(--gl-pr);
+        box-shadow: var(--gl-pr);
     }
+
     to {
-      box-shadow: var(--gl-sd);
+        box-shadow: var(--gl-sd);
     }
-  }
-  
+}

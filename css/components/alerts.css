@@ -1,83 +1,61 @@
-
-h2 {
-  font-size: 2rem;
-  color: rgb(66, 4, 4);
-  margin-bottom: 2rem;
-  border-left: 6px solid rgba(145, 12, 12, 0.897);
-  padding-left: 12px;
+.alr {
+	padding: 12px;
+	border-radius: 8px;
+	margin-bottom: 12px;
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	border-left: 4px solid transparent;
+	font-family: 'Segoe UI', sans-serif;
+	line-height: 1.5;
 }
 
-.alr {
-    padding: 12px;
-    border-radius: 8px;
-    margin-bottom:12px;
-    display:flex;
-    align-items:flex-start;
-    gap:8px ;
-    border-left:4px solid transparent;
-    font-family:'Segoe UI',sans-serif;
-    line-height:1.5;
-  }
-  
 
-  .alr-pri
-  {
-    background-color: rgba(79, 70, 229, 0.1);
-    color: #4932f1;
-    border-left-color: #4932f1;
-  }
-  
-  .alr-sec 
-  {
-    background-color: rgba(99, 102, 241, 0.1);
-    color: #0690fa;
-    border-left-color: #0690fa;
-  }
-   
-  .alr-succes{
-    background-color: rgba(16, 185, 129, 0.1);
-    color: #09b693;
-    border-left-color: #09b693 ;
-  }
-  
-  .alr-warn{
-    background-color: rgba(245, 158, 11, 0.1);
-    color: #ff6904;
-    border-left-color: #ff6904;
-  }
-  
-  .alr-danger{
-    background-color: rgba(239, 68, 68, 0.1);
-    color:  #fd0e0e;
-    border-left-color: #fd0e0e;
-  }
-  
-  /* Alert Elements */
-  .alr-icon{
-    font-size: 1.125rem;
-    flex-shrink: 0;
-  }
-  
-  .alr-title{
-    font-weight: 600;
-    margin-bottom: 4px;
-  }
-  
-  .alr-dismiss{
-    margin-left: auto;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: inherit;
-  }
-  
-  /* Dark Mode*/
-  [data-theme="dark"] .alr{
-    background-color: rgba(255,255,255, 0.05);
-  }
-  [data-theme="dark"] .alr-pri{
-    background-color: rgba(79,70,229, 0.2);
-  }
-   [data-theme="dark"] .alr-sec{
-    background-color: rgba(99,102,241, 0.2);
-  }
+.alr-primary {
+	background-color: rgba(79, 70, 229, 0.1);
+	color: #4932f1;
+	border-left-color: #4932f1;
+}
+
+.alr-secondary {
+	background-color: rgba(99, 102, 241, 0.1);
+	color: #0690fa;
+	border-left-color: #0690fa;
+}
+
+.alr-success {
+	background-color: rgba(16, 185, 129, 0.1);
+	color: #09b693;
+	border-left-color: #09b693;
+}
+
+.alr-warn {
+	background-color: rgba(245, 158, 11, 0.1);
+	color: #ff6904;
+	border-left-color: #ff6904;
+}
+
+.alr-danger {
+	background-color: rgba(239, 68, 68, 0.1);
+	color: #fd0e0e;
+	border-left-color: #fd0e0e;
+}
+
+/* Alert Elements */
+.alr-icon {
+	font-size: 1.125rem;
+	flex-shrink: 0;
+}
+
+.alr-title {
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+.alr-dismiss {
+	margin-left: auto;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: inherit;
+}
