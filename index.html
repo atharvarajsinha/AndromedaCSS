@@ -3,9 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andromeda CSS</title>
+    <title>Grid System Demo</title>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/utilities/background.css">
+    <link rel="stylesheet" href="css/utilities/spacing.css">
+    <link rel="stylesheet" href="css/utilities/border.css">
+    <link rel="stylesheet" href="css/utilities/tables.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/grid.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Grid System Demo</h1>
+        <h2>Responsive Grid Columns</h2>
+
+        <div class="row">
+            <div class="col col-12 h-3 w-3 my-1 mx-2 bg-primary">col-12 with bg-primary</div>
+            <div class="col col-6 h-2 w-2 my-2 mx-1 bg-secondary">col-6 with bg-secondary</div>
+            <div class="col col-4 h-2 w-2 my-3 mx-2 bg-success">col-4 with bg-success</div>
+        </div>
+
+        <div class="row">
+            <div class="col col-sm-6 col-md-4 col-lg-3 h-2 w-2 my-2 mx-3 bg-info">col-sm-6 col-md-4 col-lg-3 with bg-info</div>
+            <div class="col col-sm-6 col-md-4 col-lg-3 h-2 w-2 my-2 mx-3 bg-warn">col-sm-6 col-md-4 col-lg-3 with bg-warn</div>
+            <div class="col col-sm-6 col-md-4 col-lg-3 h-2 w-2 my-2 mx-3 bg-danger">col-sm-6 col-md-4 col-lg-3 with bg-danger</div>
+            <div class="col col-sm-6 col-md-4 col-lg-3 h-2 w-2 my-2 mx-3 bg-light">col-sm-6 col-md-4 col-lg-3 with bg-light</div>
+        </div>
+
+        <div class="row">
+            <div class="col col-12 mx-auto my-3 w-3 h-2 bg-opacity-50">col-12 with offset-3 and opacity</div>
+            <div class="col col-6 mx-auto my-2 w-2 h-3 bg-opacity-80">col-6 with offset-4 and opacity</div>
+        </div>
+
+        <div class="row">
+            <div class="col col-12 mx-auto w-3 h-3 bg-fixed">Column 0 (Fixed background)</div>
+            <div class="col col-12 mx-auto w-3 h-3 bg-local">Column 1 (Local background)</div>
+            <div class="col col-12 mx-auto w-3 h-3 bg-scroll">Column 2 (Scroll background)</div>
+        </div>
+
+        <div class="row">
+            <!-- Use a real image URL for background-cover to work -->
+            <div class="col col-12 w-3 h-3 my-4 bg-cover" style="background-image: url('https://via.placeholder.com/800x600');">
+                Background Cover Example
+            </div>
+        </div>
+
+        <!-- Border Demo Section -->
+        <h2>Border Utility Demo</h2>
+        <div class="row">
+            <div class="col col-6 w-2 h-2 my-3 border border-primary">Border 1px, Primary color</div>
+            <div class="col col-6 w-2 h-2 my-3 border-2 border-success">Border 2px, Success color</div>
+        </div>
+        <div class="row">
+            <div class="col col-6 w-2 h-2 my-3 border-4 border-danger">Border 4px, Danger color</div>
+            <div class="col col-6 w-2 h-2 my-3 border-8 border-info">Border 8px, Info color</div>
+        </div>
+        <div class="row">
+            <div class="col col-6 w-2 h-2 my-3 border-t border-warn">Top Border 1px, Warn color</div>
+            <div class="col col-6 w-2 h-2 my-3 border-r-4 border-light">Right Border 4px, Light color</div>
+        </div>
+        <div class="row">
+            <div class="col col-6 w-2 h-2 my-3 border-b-2 border-dark">Bottom Border 2px, Dark color</div>
+            <div class="col col-6 w-2 h-2 my-3 border-l-8 border-black">Left Border 8px, Black color</div>
+        </div>
+
+        <div class="row">
+            <div class="col col-6 w-2 h-2 my-3 rounded-sm border-2 border-primary">Rounded Sm, Border 2px</div>
+            <div class="col col-6 w-2 h-2 my-3 rounded-lg border-4 border-secondary">Rounded Lg, Border 4px</div>
+        </div>
+
+        <div class="row">
+            <div class="col col-6 w-2 h-2 my-3 rounded-full border-2 border-success">Rounded Full, Border 2px</div>
+            <div class="col col-6 w-2 h-2 my-3 rounded-t-md border-2 border-danger">Rounded Top Md, Border 2px</div>
+        </div>
+
+        <div class="row">
+            <div class="col col-6 w-2 h-2 my-3 border-solid border-gray-500">Solid Border, Gray-500</div>
+            <div class="col col-6 w-2 h-2 my-3 border-dashed border-gray-200">Dashed Border, Gray-200</div>
+        </div>
+        <div class="row">
+            <div class="col col-6 w-2 h-2 my-3 border-dotted border-gray-300">Dotted Border, Gray-300</div>
+            <div class="col col-6 w-2 h-2 my-3 border-double border-gray-400">Double Border, Gray-400</div>
+        </div>
+
+        <!-- Table Demo Section -->
+        <h2>Table Demo</h2>
+        <table class="table table-border-collapse table-auto table-hover">
+            <caption class="table-caption-top">Sample Table with Hover Effect</caption>
+            <thead>
+                <tr>
+                    <th class="table-p-sm">Name</th>
+                    <th class="table-p-sm">Age</th>
+                    <th class="table-p-sm">Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-p-sm">John Doe</td>
+                    <td class="table-p-sm">30</td>
+                    <td class="table-p-sm">USA</td>
+                </tr>
+                <tr>
+                    <td class="table-p-sm">Jane Smith</td>
+                    <td class="table-p-sm">25</td>
+                    <td class="table-p-sm">Canada</td>
+                </tr>
+                <tr>
+                    <td class="table-p-sm">Carlos Ruiz</td>
+                    <td class="table-p-sm">28</td>
+                    <td class="table-p-sm">Spain</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

@@ -1,13 +1,12 @@
-/* .btn-title {
+.btn-title {
     font-size: var(--txt-xxxl);
     font-weight: 800;
     background: linear-gradient(90deg, var(--primary), var(--danger));
-    -webkit-text-fill-color: transparent;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: var(--sp-xl);
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 900px;
     margin: auto;
     padding: var(--sp-xl);
@@ -15,30 +14,9 @@
     background: rgba(223, 230, 233, 0.7);
     backdrop-filter: blur(8px);
     box-shadow: var(--shd-lg);
-  }
-  
-  h1 {
-    font-size: var(--txt-xxxl);
-    font-weight: 300;
-    margin-bottom: var(--sp-xxl);
-  }
-  
-  h1::before {
-    content: "🚀 ";
-  }
-  
-  section {
-    margin-bottom: var(--sp-xxxl);
-  }
-  
-  h2 {
-    font-size: var(--txt-xxl);
-    font-weight: 600;
-    margin-bottom: var(--sp-md);
-  }
-  
-  /* Buttons */
-.btn {
+}
+
+  .btn {
     border: none;
     border-radius: var(--rd-lg);
     padding: var(--sp-sm) var(--sp-lg);
